@@ -1,0 +1,49 @@
+//profile
+.new
+  padding: 15px 0px
+
+.new .title
+    margin-bottom: 10px
+
+.new_box
+  display: flex
+  flex-wrap: wrap
+
+
+.new_name
+  color: $primary-color
+  text-align: center
+  font-weight: bold
+  font-size: 16px
+
+.new_city
+  text-align: center
+  font-size: 16px
+  color: $text-black
+
+.new_item
+  padding: 5px
+  margin-bottom: 10px
+  width: 50%
+  &:hover
+    .new_item-img img
+      transform: scale(1.03)
+
+.new_item-img
+  margin-bottom: 5px
+
+.new_item-img img
+  width: 100%
+  transition: 1s ease-out
+
+@media(min-width: 475px)
+  .new_item
+    width: calc(100% / 3)
+
+@media(min-width: 768px)
+  .new_item
+    width: calc(100% / 5)
+
+@media(min-width: 992px)
+  .new_item
+    width: calc(100% / 7)

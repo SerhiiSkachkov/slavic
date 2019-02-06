@@ -1,0 +1,209 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet")
+        link(rel='stylesheet' href='css/blueimp-gallery.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title new
+    body
+        include components/header.pug
+        
+        main.main-wrap
+            section.user
+                .wrapper
+                    .user_head
+                        .user_profies
+                            .user_img
+                                img(src="img/user.jpg", alt="photo")
+                            .user_conect
+                                .user_name Katerina  Kanstantinova
+                                    span.user_name--online online
+                                .user_contact
+                                    ul.conect_list
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-message
+                                                | Send message
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-gift
+                                                | Send a virtual gift
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-order
+                                                | Order a gift
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-heart
+                                                | Add to favorites
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-chat
+                                                | Live Chat
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-watch
+                                                | Video conference
+                                    ul.conect_list
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-message
+                                                | Send message
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-gift
+                                                | Send a virtual gift
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-order
+                                                | Order a gift
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-heart
+                                                | Add to favorites
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-chat
+                                                | Live Chat
+                                        li
+                                            a(href="")
+                                                span.icon-connect.icon-connect-watch
+                                                | Video conference
+
+                    .user_present.js-user_present
+                        
+                            .user_present_item
+                                .user_present_item-box
+                                    .user_present_img
+                                        img(src="img/user_present_1.png", alt="present")
+                                    .user_present_descr
+                                        .user_present_descr-content
+                                            p  Lorem ipsum dolor sit amet
+
+                            .user_present_item
+                                .user_present_item-box
+                                    .user_present_img
+                                        img(src="img/user_present_2.png", alt="present")
+                                    .user_present_descr
+                                        .user_present_descr-content
+                                            p  Lorem ipsum dolor sit amet
+
+                            .user_present_item
+                                .user_present_item-box
+                                    .user_present_img
+                                        img(src="img/user_present_3.png", alt="present")
+                                    .user_present_descr
+                                        .user_present_descr-content
+                                            p  Lorem ipsum dolor sit 
+                                            
+                            .user_present_item
+                                .user_present_item-box
+                                    .user_present_img
+                                        img(src="img/user_present_3.png", alt="present")
+                                    .user_present_descr
+                                        .user_present_descr-content
+                                            p  Lorem ipsum dolor sit amet
+
+                    .user_media
+                        h3.title Photo/video gallery
+                        #links.user_media-box
+                            a.user_media-item(href="img/user.jpg")
+                                img(src="img/user.jpg", alt="photo")
+                            a.user_media-item(href="img/user.jpg")
+                                img(src="img/user.jpg", alt="photo")
+                            a.user_media-item(href="img/user.jpg")
+                                img(src="img/user.jpg", alt="photo")
+                            a.user_media-item(href="img/user.jpg")
+                                img(src="img/user.jpg", alt="photo")
+                            a.user_media-item(href="img/user.jpg")
+                                img(src="img/user.jpg", alt="photo")
+                            a.user_media-item(href="img/user.jpg")
+                                img(src="img/user.jpg", alt="photo")
+                            a.user_media-item(href="img/user.jpg")
+                                img(src="img/user.jpg", alt="photo")
+                            a.user_media-item(href="img/user.jpg")
+                                img(src="img/user.jpg", alt="photo")
+                                    
+                        #blueimp-gallery.blueimp-gallery.blueimp-gallery-controls
+                            .slides
+                            h3.title
+                            p.description
+                            .prev ‹
+                            .next ›
+                            .close ×
+                            .play-pause
+                            .indicator
+                                
+
+                    .user_info
+                        h3.title Costum info
+                        .user_info-box
+
+                            ul.user_info-list.user_info-adress
+                                li
+                                    .user_data-ask Birthday:
+                                    .user_data-conclusion May 05,1986(32 years old) 
+                                li
+                                    .user_data-ask Country:
+                                    .user_data-conclusion Ukraine
+                                li
+                                    .user_data-ask Region:
+                                    .user_data-conclusion Odes`ka oblast
+                                li
+                                    .user_data-ask City:
+                                    .user_data-conclusion Odessa                                   
+
+                            ul.user_info-list.user_info-career
+                                li
+                                    .user_data-ask Height:
+                                    .user_data-conclusion 157 cm
+                                li
+                                    .user_data-ask Weight:
+                                    .user_data-conclusion 56 kg
+                                li
+                                    .user_data-ask Eye color:
+                                    .user_data-conclusion Blue
+                                li
+                                    .user_data-ask Hair color:
+                                    .user_data-conclusion Blonde
+
+                            ul.user_info-list.user_info-aspect
+                                li
+                                    .user_data-ask Occupation: 
+                                    .user_data-conclusion Waiter
+                                li
+                                    .user_data-ask Education: 
+                                    .user_data-conclusion University
+                                li
+                                    .user_data-ask Lavel of english:
+                                    .user_data-conclusion Beginner
+                                li
+                                    .user_data-ask languages:
+                                    .user_data-conclusion Ukrainian, Russian
+
+                            ul.user_info-list.user_info-more
+                                li
+                                    .user_data-ask Religion: 
+                                    .user_data-conclusion Cristinity
+                                li
+                                    .user_data-ask Status: 
+                                    .user_data-conclusion Divorced
+                                li
+                                    .user_data-ask Children:
+                                    .user_data-conclusion None
+
+                            ul.user_info-list.user_info-list--width-full
+                                li
+                                    .user_data-ask About me
+                                    .user_data-conclusion Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam explicabo nesciunt illo voluptatibus natus quasi nulla reprehenderit eligendi ipsum quos.
+                        
+                                li
+                                    .user_data-ask Hobby
+                                    .user_data-conclusion Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        include components/footer.pug                        
+        include components/script.pug

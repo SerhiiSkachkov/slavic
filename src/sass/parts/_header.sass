@@ -1,0 +1,116 @@
+.header
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    z-index: 9999
+    background-color: $white-color
+
+.header_fixed
+    position: fixed
+    
+.header_wrapper
+    padding: 15px 0px
+    position: relative
+
+.logo
+    width: 80px
+    font-size: 0px
+    &:hover
+        img
+           opacity: 0.9
+
+.header_box
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+
+.header_slogan
+    display: none
+
+.header_box-control
+    display: flex
+    justify-content: space-between
+    width: 200px    
+    align-items: center
+
+.header_desc-nav
+    display: none
+
+@media(max-width: 991px)
+    .nav-item a
+        color: $primary-color
+        font-size: 16px
+        display: block
+        padding: 10px 15px
+        &:hover
+            background-color: $primary-color
+            color: $text-white
+    .header_mob-nav
+        transition: left 0.6s ease-in-out
+        padding: 30px 0px
+        height: 100vh
+        width: 80%
+        position: fixed
+        left: -100%
+        top: 0px
+        background-color: $white-color 
+        border-right: 1px solid $primary-color
+    .header_mob-nav--open
+        left: 0px
+
+@media(min-width: 768px)
+    .header_slogan
+        display: block
+        font-size: 10px
+        font-style: italic
+        span
+            color: $primary-color
+    .header_block
+        display: flex
+        width: calc(100% - 150px)
+        max-width: 730px
+        flex-flow: wrap
+    .header_box-control
+        margin-left: auto
+    .logo
+        width: 130px      
+
+@media(min-width: 992px)
+    .header_mob-nav
+        display: none
+    .header_box-control
+        width: 140px
+    .header_slogan
+        font-size: 14px
+        padding-left: 10px
+    .logo
+        width: 200px
+    .header_block
+        padding-top: 30px
+        width: calc(100% - 200px)
+    .header_desc-nav
+        display: block
+        width: 100%
+        padding: 32px 0px 10px
+    .nav-list
+        display: flex
+        justify-content: space-between
+    .nav-item a
+        color: $text-black
+        padding: 5px 10px
+        font-size: 16px
+        &:hover
+            background-color: $primary-color
+            color: white
+    .nav
+        background-image: linear-gradient(to right,rgba(126, 128, 138, 0.03),rgba(211, 212, 218, 0.68) 40%,rgba(211, 212, 218, 0.82) 60%,rgba(211, 212, 218, 0.06))
+
+@media(min-width: 1199px)
+    .logo
+        width: 260px
+    .header_block
+        width: calc(100% - 260px)
+    .nav-item a
+        padding: 7px 10px 
